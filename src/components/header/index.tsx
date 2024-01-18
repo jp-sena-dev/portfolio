@@ -24,7 +24,7 @@ export function Header({ selectedSection, setSectionSelected }: HeaderProps) {
             target="_blank"
             rel="noreferrer"
             href="https://github.com/joaopedr0sena"
-            className="hover:mt-[-4px] hover:brightness-75 h-8 lg:h-[50px]"
+            className="hover:text-action h-8 lg:h-[50px]"
           >
             <Github size="100%" />
           </a>
@@ -32,7 +32,7 @@ export function Header({ selectedSection, setSectionSelected }: HeaderProps) {
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/jp-sena-dev/"
-            className="hover:mt-[-4px] hover:brightness-75 h-8 lg:h-[50px]"
+            className="hover:text-action h-8 lg:h-[50px]"
           >
             <Linkedin size="100%" />
           </a>
@@ -40,7 +40,7 @@ export function Header({ selectedSection, setSectionSelected }: HeaderProps) {
             target="_blank"
             rel="noreferrer"
             href="https://www.instagram.com/joao_sena1410/"
-            className="hover:mt-[-4px] hover:brightness-75 h-8 lg:h-[50px]"
+            className="hover:text-action h-8 lg:h-[50px]"
           >
             <Instagram size="100%" />
           </a>

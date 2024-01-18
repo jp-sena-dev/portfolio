@@ -53,26 +53,26 @@ export function Nav({ selectedSection, setSelectedSection }: NavProps) {
         <nav className={selectedSection === 'home' ? 'md:m-0 flex gap-4 z-[51]' : 'w-max flex gap-4 z-[51]'}>
           <a href="#home" onClick={() => setSelectedSection('home')}>
             <Button variant={selectedSection === 'home' ? 'secondary' : 'ghost'}>
-              <p className="relative font-bold text-xl">
+              <span className="relative font-bold text-xl">
                 HOME
                 <div className={`absolute transition-all ${selectedSection === 'home' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
-              </p>
+              </span>
             </Button>
           </a>
           <a href="#portfolio" onClick={() => setSelectedSection('portfolio')}>
             <Button variant={selectedSection === 'portfolio' ? 'secondary' : 'ghost'}>
-              <p className="relative font-bold text-xl">
+              <span className="relative font-bold text-xl">
                 PORTFOLIO
                 <div className={`absolute transition-all ${selectedSection === 'portfolio' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
-              </p>
+              </span>
             </Button>
           </a>
           <a href="#about" onClick={() => setSelectedSection('about')}>
             <Button variant={selectedSection === 'about' ? 'secondary' : 'ghost'}>
-              <p className="relative font-bold text-xl">
+              <span className="relative font-bold text-xl">
                 ABOUT
                 <div className={`absolute transition-all ${selectedSection === 'about' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
-              </p>
+              </span>
             </Button>
           </a>
         </nav>
