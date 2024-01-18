@@ -37,15 +37,25 @@ export const projects: Projects[] = [
     links: {
       web: 'https://iny.vercel.app/',
     },
-    technologies: ['JavaScript', 'Next.js', 'TailwindCSS', 'HTML'],
+    technologies: ['JavaScript', 'TypeScript', 'Next.js', 'TailwindCSS', 'HTML'],
   },
   {
     title: 'Todo-list',
     description: '👋 Boas vindas! Esta aplicação foi desenvolvida para simplificar o gerenciamento de tarefas diárias e aperfeiçoar minhas habilidades em React Native.',
-    imageURL: 'https://private-user-images.githubusercontent.com/85967112/297518826-b8f80a34-6329-454e-8ffa-f64767ab7f4d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU1MjYyNzAsIm5iZiI6MTcwNTUyNTk3MCwicGF0aCI6Ii84NTk2NzExMi8yOTc1MTg4MjYtYjhmODBhMzQtNjMyOS00NTRlLThmZmEtZjY0NzY3YWI3ZjRkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTE3VDIxMTI1MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU3ZGM3Y2QxMzc4YjY2ZGJlOTFjNTM1NWFjYzVjNzEyZDIyZjRmMDk0NTAzOGUzNTE4OWE2MzQwMjZjY2UyYTYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.BekIOTcgAJQFXwh2ID1AQWIqVx2Qf9aFRoft_zqX4Xs',
+    imageURL: 'https://github.com/joaopedr0sena/todo-list-react-native/assets/85967112/b8f80a34-6329-454e-8ffa-f64767ab7f4d',
     links: {
       repository: 'https://github.com/joaopedr0sena/todo-list-react-native',
     },
     technologies: ['JavaScript', 'React Native'],
+  },
+  {
+    title: 'Todo-list',
+    description: '👋 Boas vindas! Esta aplicação foi desenvolvida para simplificar o gerenciamento de tarefas diárias e aperfeiçoar minhas habilidades em JavaScript, HTML e CSS.',
+    imageURL: 'https://github.com/joaopedr0sena/todo-list/assets/85967112/eddc8822-1db5-459d-bdcc-a911378678be',
+    links: {
+      repository: 'https://github.com/joaopedr0sena/todo-list',
+      web: 'https://joaopedr0sena.github.io/todo-list/',
+    },
+    technologies: ['JavaScript', 'HTML', 'CSS'],
   },
 ];
