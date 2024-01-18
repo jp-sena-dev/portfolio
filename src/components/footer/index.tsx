@@ -21,9 +21,9 @@ export function Footer() {
       </p>
       <Dialog>
         <DialogTrigger className="min-w-[320px] w-[90%] max-w-[560px]">
-          <div className="group relative transition-all flex items-center justify-center rounded-full text-[36px] w-full h-[72px] bg-background text-[150%] md:font-medium md:hover:text-[40px]">
+          <div className="group relative transition-all flex items-center justify-center rounded-full text-[36px] w-full h-[72px] bg-background text-[150%] md:font-medium hover:bg-primary hover:border border-action hover:text-action">
             Entre em contato
-            <div className="absolute transition-all right-8 h-[50%] md:h-[36px] md:group-hover:h-[40px]">
+            <div className="absolute transition-all right-8 h-[50%] md:h-[36px] group-hover:text-action">
               <Send size="100%" />
             </div>
           </div>

@@ -13,7 +13,7 @@ export function SocialMeadiaLinks() {
         target="_blank"
         rel="noreferrer"
         href="https://github.com/joaopedr0sena"
-        className="hover:text-secondary hover:mt-[-4px]"
+        className="hover:text-action"
       >
         <Github size="35px" />
       </a>
@@ -21,7 +21,7 @@ export function SocialMeadiaLinks() {
         target="_blank"
         rel="noreferrer"
         href="https://www.linkedin.com/in/jp-sena-dev/"
-        className="hover:text-secondary hover:mt-[-4px] hover:brightness-75"
+        className="hover:text-action"
       >
         <Linkedin size="35px" />
       </a>
@@ -29,7 +29,7 @@ export function SocialMeadiaLinks() {
         target="_blank"
         rel="noreferrer"
         href="https://www.instagram.com/joao_sena1410/"
-        className="hover:text-secondary hover:mt-[-4px] hover:brightness-75"
+        className="hover:text-action"
       >
         <Instagram size="35px" />
       </a>
@@ -37,7 +37,7 @@ export function SocialMeadiaLinks() {
         target="_blank"
         rel="noreferrer"
         href="https://www.instagram.com/joao_sena1410/"
-        className="hover:text-secondary hover:mt-[-4px] hover:brightness-75"
+        className="hover:text-action"
       >
         <Mail size="35px" />
       </a>
