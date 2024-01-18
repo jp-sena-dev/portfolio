@@ -141,7 +141,7 @@ export default function Home() {
                 <div className="w-full max-h-[200px] bg-secondary rounded-md">
                   <Dialog>
                     <DialogTrigger className="w-full h-full bg-secondary">
-                      <img src={project.imgageURL} className="max-h-full rounded-md w-full object-cover transition bg-cover brightness-75 hover:bg-center hover:brightness-110 hover:drop-shadow-lg" alt="" />
+                      <img src={project.imageURL} className="max-h-full rounded-md w-full object-cover transition bg-cover brightness-75 hover:bg-center hover:brightness-110 hover:drop-shadow-lg" alt="" />
                     </DialogTrigger>
                     <DialogContent>
                       <DialogHeader>
@@ -159,7 +159,7 @@ export default function Home() {
                       <div>
                         <p className="text-justify">{ project.description }</p>
                         <div className="relative">
-                          <img src={project.imgageURL} alt="project-image" className="w-full my-2" />
+                          <img src={project.imageURL} alt="project" className="w-full my-2" />
                           <a target="_blank" rel="noreferrer" href={project.links.web || project.links.repository} className="absolute bg-transparent text-transparent left-0 top-0 w-full h-full hover:text-white hover:bg-[#0000008f] flex items-center justify-center">
                             {project.links.web ? <Globe /> : <Github />}
                           </a>
