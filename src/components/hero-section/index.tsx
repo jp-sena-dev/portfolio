@@ -26,22 +26,48 @@ export function HeroSection() {
           transformando conceitos em realidade digital.
         </p>
       </div>
-      <div className="h-full relatve mt-4">
+      <div className="h-full relatve mt-4 mx-auto">
         <motion.div
           initial={{
             width: '150px',
-            position: 'absolute',
-            left: '50%',
-            transform: 'translateX(-50%)',
+            height: '100%',
+            // position: 'absolute',
+            // left: '50%',
+            // transform: 'translateX(-50%)',
           }}
           animate={{
-            position: 'absolute',
+            // position: 'absolute',
             width: '150px',
-            bottom: ['20%', '0%', '20%'],
-            left: '50%',
-            transform: 'translateX(-50%)',
+            height: '100%',
+            // bottom: ['20%', '0%', '20%'],
+            scale: ['100%', 0, '100%'],
+            // x: [0, 100, 200, 300, 350, 400, 450, 500, 450, 400, 350, 300, 200, 100, 0],
+            y: [
+              0,
+              100,
+              150,
+              200,
+              250,
+              300,
+              350,
+              400,
+              450,
+              500,
+              450,
+              400,
+              350,
+              300,
+              250,
+              200,
+              150,
+              100,
+              0,
+            ],
+            // rotate: [0, 15, 30, 45, 90, 100, 200, 100, 90, 45, 30, 15],
+            // left: '50%',
+            // transform: 'translateX(-50%)',
           }}
-          transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
+          transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
         >
           <ChevronDown size={150} />
         </motion.div>

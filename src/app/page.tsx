@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="px-4 pt-8 md:px-16 pt-16" id="home">
+      <div className="px-4 pt-8 md:px-16 pt-16 overflow-x-hidden" id="home">
         <section className="h-screen ">
           <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="home" />
           <Header selectedSection={selectedSection} setSectionSelected={setSectionSelected} />
