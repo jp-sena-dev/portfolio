@@ -30,49 +30,45 @@ export function Nav({ selectedSection, setSelectedSection }: NavProps) {
   return (
     <div>
       <nav className={`z-[51] flex justify-center transition-all md:hidden w-screen mx-[-16px] fixed top-${selectedSection === 'home' ? '18' : '4'}`}>
-        <div>
-          <Button variant="ghost">
+        <Button variant={selectedSection === 'home' ? 'secondary' : 'ghost'}>
+          <a href="#home" className="relative font-bold text-xl" onClick={() => setSelectedSection('home')}>
+            HOME
+            <div className={`absolute transition-all ${selectedSection === 'home' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
+          </a>
+        </Button>
+        <Button variant={selectedSection === 'portfolio' ? 'secondary' : 'ghost'}>
+          <a href="#portfolio" className="relative font-bold text-xl" onClick={() => setSelectedSection('portfolio')}>
+            PORTFOLIO
+            <div className={`absolute transition-all ${selectedSection === 'portfolio' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
+          </a>
+        </Button>
+        <Button variant={selectedSection === 'about' ? 'secondary' : 'ghost'}>
+          <a className="relative font-bold text-xl" href="#about" onClick={() => setSelectedSection('about')}>
+            ABOUT
+            <div className={`absolute transition-all ${selectedSection === 'about' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
+          </a>
+        </Button>
+      </nav>
+      <div ref={escope} className="hidden md:block ">
+        <nav className={selectedSection === 'home' ? 'md:m-0 flex gap-4 z-[51]' : 'w-max flex gap-4 z-[51]'}>
+          <Button variant={selectedSection === 'home' ? 'secondary' : 'ghost'}>
             <a href="#home" className="relative font-bold text-xl" onClick={() => setSelectedSection('home')}>
               HOME
               <div className={`absolute transition-all ${selectedSection === 'home' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
             </a>
           </Button>
-          <Button variant="ghost">
+          <Button variant={selectedSection === 'portfolio' ? 'secondary' : 'ghost'}>
             <a href="#portfolio" className="relative font-bold text-xl" onClick={() => setSelectedSection('portfolio')}>
               PORTFOLIO
               <div className={`absolute transition-all ${selectedSection === 'portfolio' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
             </a>
           </Button>
-          <Button variant="ghost">
+          <Button variant={selectedSection === 'about' ? 'secondary' : 'ghost'}>
             <a className="relative font-bold text-xl" href="#about" onClick={() => setSelectedSection('about')}>
               ABOUT
               <div className={`absolute transition-all ${selectedSection === 'about' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
             </a>
           </Button>
-        </div>
-      </nav>
-      <div ref={escope} className="hidden md:block ">
-        <nav className={selectedSection === 'home' ? 'md:m-0 flex z-[51]' : 'w-max flex z-[51]'}>
-          <div>
-            <Button variant="ghost">
-              <a href="#home" className="relative font-bold text-xl" onClick={() => setSelectedSection('home')}>
-                HOME
-                <div className={`absolute transition-all ${selectedSection === 'home' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
-              </a>
-            </Button>
-            <Button variant="ghost">
-              <a href="#portfolio" className="relative font-bold text-xl" onClick={() => setSelectedSection('portfolio')}>
-                PORTFOLIO
-                <div className={`absolute transition-all ${selectedSection === 'portfolio' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
-              </a>
-            </Button>
-            <Button variant="ghost">
-              <a className="relative font-bold text-xl" href="#about" onClick={() => setSelectedSection('about')}>
-                ABOUT
-                <div className={`absolute transition-all ${selectedSection === 'about' ? 'w-full' : 'w-0'} h-[12%] bg-action left-0 bottom-0`} />
-              </a>
-            </Button>
-          </div>
         </nav>
       </div>
     </div>
