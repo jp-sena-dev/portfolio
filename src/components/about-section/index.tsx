@@ -2,7 +2,7 @@ import { UnderlinedWrapper } from '@/components/underlined-wrapper';
 
 export function AboutSection() {
   return (
-    <div className="flex gap-4 md:gap-16 max-w-[1060px] m-auto mt-14">
+    <div className="flex gap-4 md:gap-16 max-w-[1060px] m-auto mt-10">
       <div className="w-20 md:w-[300px] md:h-[427px] bg-primary">a</div>
       <div className="text-5 md:text-[20px] max-w-[600px] text-balance indent-4">
         <p className="mb-5">

@@ -1,14 +1,5 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
-import { Send } from 'lucide-react';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
 import { SocialMeadiaLinks } from './components/social-media-links';
+import { SendMessageButton } from './components/send-message-button';
 
 export function Footer() {
   return (
@@ -19,27 +10,7 @@ export function Footer() {
         <span className="underline text-action">suas ideias em realidade</span>
         ?
       </p>
-      <Dialog>
-        <DialogTrigger className="min-w-[320px] w-[90%] max-w-[560px]">
-          <div className="group relative transition-all flex items-center justify-center rounded-full w-full h-[72px] bg-background text-[140%] md:text-[36px] hover:bg-primary hover:border border-action hover:text-action">
-            Entre em contato
-            <div className="absolute transition-all right-8 h-[40%] md:h-[36px] group-hover:text-action">
-              <Send size="100%" />
-            </div>
-          </div>
-        </DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Ainda estou desenvolvendo :D</DialogTitle>
-            <DialogDescription>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur quae alias architecto nam dolores. Nesciunt
-              eius laboriosam minima suscipit earum, magnam architecto
-              perspiciatis molestiae inventore quos illum modi qui atque.
-            </DialogDescription>
-          </DialogHeader>
-        </DialogContent>
-      </Dialog>
+      <SendMessageButton />
       <SocialMeadiaLinks />
       <p className="text-secondary absolute left-0 bottom-0 text-[11px]">
         <span className="text-action">developed by</span>
