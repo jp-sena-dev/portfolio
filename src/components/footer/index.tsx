@@ -23,17 +23,19 @@ export function Footer() {
         <DialogTrigger className="min-w-[320px] w-[90%] max-w-[560px]">
           <div className="group relative transition-all flex items-center justify-center rounded-full text-[36px] w-full h-[72px] bg-background text-[140%] md:font-medium hover:bg-primary hover:border border-action hover:text-action">
             Entre em contato
-            <div className="absolute transition-all right-8 h-[50%] md:h-[36px] group-hover:text-action">
+            <div className="absolute transition-all right-8 h-[40%] md:h-[36px] group-hover:text-action">
               <Send size="100%" />
             </div>
           </div>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Are you absolutely sure?</DialogTitle>
+            <DialogTitle>Ainda estou desenvolvendo :D</DialogTitle>
             <DialogDescription>
-              This action cannot be undone. This will permanently delete your account
-              and remove your data from our servers.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur quae alias architecto nam dolores. Nesciunt
+              eius laboriosam minima suscipit earum, magnam architecto
+              perspiciatis molestiae inventore quos illum modi qui atque.
             </DialogDescription>
           </DialogHeader>
         </DialogContent>
