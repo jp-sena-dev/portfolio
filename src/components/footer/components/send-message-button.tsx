@@ -33,7 +33,6 @@ export function SendMessageButton() {
     name: z.string().min(1, { message: 'Digite seu nome.' }),
     lastName: z.string().min(1, { message: 'Digite seu sobrenome.' }),
     email: z.string().email({ message: 'Digite seu E-mail.' }),
-    phone: z.string(),
     idea: z.string().min(10, { message: 'A frase deve ter pelo menos 10 caracteres' }),
   });
 
@@ -43,12 +42,12 @@ export function SendMessageButton() {
       name: '',
       lastName: '',
       email: '',
-      phone: '',
       idea: '',
     },
   });
 
   const onChangeSubmit = async (data: z.infer<typeof formSchema>) => {
+    setOpen(false);
     try {
       await setDoc(doc(db, 'networking', `${data.name} ${data.lastName}`), {
         name: {
@@ -56,7 +55,6 @@ export function SendMessageButton() {
           lastL: data.lastName,
         },
         contact: {
-          phone: data.phone,
           email: data.email,
         },
         idea: data.idea,
@@ -69,7 +67,6 @@ export function SendMessageButton() {
         description: 'There was a problem with your request.',
       });
     }
-    setOpen(false);
   };
 
   return (
@@ -128,7 +125,7 @@ export function SendMessageButton() {
                   </FormItem>
                 )}
               />
-              <FormField
+              {/* <FormField
                 control={form.control}
                 name="phone"
                 render={({ field }) => (
@@ -140,7 +137,7 @@ export function SendMessageButton() {
                     <FormMessage />
                   </FormItem>
                 )}
-              />
+              /> */}
               <FormField
                 control={form.control}
                 name="idea"
@@ -153,7 +150,7 @@ export function SendMessageButton() {
                   </FormItem>
                 )}
               />
-              <div className="w-full flex justify-end text-secondary">
+              <div className="w-full flex z-[54] justify-end text-secondary">
                 <Button type="submit" variant="default">send</Button>
               </div>
             </form>
