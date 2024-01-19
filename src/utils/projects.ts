@@ -32,7 +32,7 @@ export const projects: Projects[] = [
   },
   {
     title: 'INY',
-    description: '👋 Boas vindas! Esta aplicação foi desenvolvida para simplificar o gerenciamento de tarefas diárias e aperfeiçoar minhas habilidades em React Native.',
+    description: '👋 Boas vindas! O site oferece uma landing page dedicada para uma empresa de massoterapia, integrando estética e informação para atrair clientes.',
     imageURL: 'https://github.com/joaopedr0sena/marketplace/assets/85967112/aaf6a903-9b78-42da-8ace-24c9b874d980',
     links: {
       web: 'https://iny.vercel.app/',
