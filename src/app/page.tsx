@@ -19,13 +19,13 @@ export default function Home() {
           <Header selectedSection={selectedSection} setSectionSelected={setSectionSelected} />
           <HeroSection />
         </section>
-        <section id="portfolio" className="min-h-screen pt-16">
+        <section id="portfolio" className="pt-16 mb-24">
           <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="portfolio" />
           <PortfolioSection />
         </section>
         <section id="about" className="pt-16">
-          <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="about" />
           <AboutSection />
+          <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="about" />
         </section>
       </div>
       <Footer />

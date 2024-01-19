@@ -150,7 +150,7 @@ export function SendMessageButton() {
                   </FormItem>
                 )}
               />
-              <div className="w-full flex z-[54] justify-end text-secondary">
+              <div className="w-full flex justify-end text-secondary">
                 <Button type="submit" variant="default">send</Button>
               </div>
             </form>

@@ -36,7 +36,7 @@ export function PortfolioSection() {
         {!selectedTechnology ? <div /> : <Button variant="outline" onClick={() => { setSelectedTechnology(''); }}>{selectedTechnology}</Button>}
         <Combobox setSelectedTechnology={setSelectedTechnology} />
       </div>
-      <div className="grid gap-8 md:grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)] md:grid-rows-[minmax(200px,_1fr)_minmax(200px,_1fr)_minmax(200px,_1fr)]">
+      <div className="grid gap-8 md:grid-cols-[minmax(100px,_1fr)_minmax(100px,_1fr)_minmax(100px,_1fr)] md:grid-rows-[minmax(200px,_1fr)_minmax(200px,_1fr)]">
         {fiteredProjects.map((project) => (
           <div className="w-full max-h-[200px] bg-secondary rounded-md">
             <Dialog>
