@@ -66,12 +66,12 @@ export function PortfolioSection() {
                   </div>
                   <div className="text-action flex gap-1 transition-all h-6">
                     {project.links.web && (
-                      <a href={project.links.web} target="_blank" rel="noreferrer" className="hover:text-action-hover hover:mt-[-4px]">
+                      <a href={project.links.web} target="_blank" rel="noreferrer" className="hover:text-action-hover hover:mt-[-1px]">
                         <i><Globe /></i>
                       </a>
                     )}
                     {project.links.repository && (
-                      <a href={project.links.repository} target="_blank" rel="noreferrer" className="hover:text-action-hover hover:mt-[-4px]">
+                      <a href={project.links.repository} target="_blank" rel="noreferrer" className="hover:text-action-hover hover:mt-[-1px]">
                         <i><Github /></i>
                       </a>
                     )}

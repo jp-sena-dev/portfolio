@@ -2,11 +2,11 @@ import { UnderlinedWrapper } from '@/components/underlined-wrapper';
 
 export function AboutSection() {
   return (
-    <div className="relative flex gap-4 md:gap-16 max-w-[800px] mx-auto mt-10 text-justify">
+    <div className="relative flex gap-4 md:gap-16 max-w-[800px] mx-auto mt-10">
       <div className="w-2 min-h-full absolute left-[-1px] bg-primary">
         {/* <img src="/me.jpeg" alt="me" className="w-full h-full object-cover" /> */}
       </div>
-      <div className="text-5 md:text-[22px] max-w-[90%] text-balance indent-4 m-auto">
+      <div className="text-5 md:text-[22px] max-w-[90%] text-justify indent-4 m-auto">
         <p className="mb-5">
           Iniciei minha jornada na programação aos 13 anos por meio do
           {' '}
@@ -21,7 +21,7 @@ export function AboutSection() {
           aprimorei habilidades em
           {' '}
           <UnderlinedWrapper>JavaScript</UnderlinedWrapper>
-          ,
+          {', '}
           <UnderlinedWrapper>CSS</UnderlinedWrapper>
           {' e '}
           <UnderlinedWrapper>HTML</UnderlinedWrapper>

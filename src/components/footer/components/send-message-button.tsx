@@ -72,7 +72,7 @@ export function SendMessageButton() {
   return (
     <Dialog open={open} onOpenChange={() => { setOpen(!open); form.reset(); }}>
       <DialogTrigger onClick={() => setOpen(true)} className="min-w-[320px] w-[90%] max-w-[560px]">
-        <div className="group relative transition-all flex items-center justify-center rounded-full w-full h-[72px] bg-background text-[140%] md:text-[36px] hover:bg-primary hover:border border-action hover:text-action">
+        <div className="group relative transition-all flex items-center justify-center rounded-full w-full h-[72px] bg-background text-[140%] md:text-[36px] hover:bg-primary hover:border-4 font-bold border-action hover:text-action">
           Entre em contato
           <div className="absolute transition-all right-8 h-[40%] md:h-[36px] group-hover:text-action">
             <Send size="100%" />
