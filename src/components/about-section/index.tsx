@@ -35,10 +35,7 @@ export function AboutSection() {
           na criação de aplicações.
         </p>
         <p>
-          Atualmente com
-          {' '}
-          <UnderlinedWrapper>18 anos</UnderlinedWrapper>
-          , estou em busca da minha primeira oportunidade como
+          Atualmente, estou em busca da minha primeira oportunidade como
           desenvolvedor. Nos últimos dois anos, participei ativamente em projetos freelancer
           e dediquei-me à construção de side projects. Estou entusiasmado para aplicar meu
           conhecimento prático em
