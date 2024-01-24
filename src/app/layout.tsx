@@ -32,7 +32,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <GoogleAnalytics gaId="G-XYZ" />
+          <GoogleAnalytics gaId="G-GXFP79SKSL" />
           <Toaster />
         </ThemeProvider>
       </body>
