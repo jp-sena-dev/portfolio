@@ -11,6 +11,7 @@ const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' });
 export const metadata: Metadata = {
   title: 'jp-sena.dev - João Pedro Sena',
   icons: '/icon.ico',
+  description: 'Olá, meu nome é João Pedro Sena! Desenvolvedor FrontEnd com mais de 2 anos de experiência, especializado em JavaScript, HTML e CSS. Estou aqui para criar interfaces incríveis e funcionais, transformando conceitos em realidade digital.',
 };
 
 export default function RootLayout({

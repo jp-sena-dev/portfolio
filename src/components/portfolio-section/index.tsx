@@ -41,7 +41,7 @@ export function PortfolioSection() {
           <div className="w-full max-h-[200px] bg-secondary rounded-md">
             <Dialog>
               <DialogTrigger className="w-full h-full bg-secondary">
-                <img src={project.imageURL} className="max-h-full md:max-h-full md:min-h-full rounded-md w-full object-cover transition bg-cover brightness-75 hover:bg-center hover:brightness-110 hover:drop-shadow-lg" alt="" />
+                <img src={project.imageURL} className="max-h-full md:max-h-full md:min-h-full rounded-md w-full object-cover transition bg-cover brightness-75 hover:bg-center hover:brightness-110 hover:drop-shadow-lg" alt={`Projeto de João Pedro Sena ${project.title}`} />
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
