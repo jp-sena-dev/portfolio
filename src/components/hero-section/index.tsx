@@ -14,7 +14,7 @@ export function HeroSection() {
           </UnderlinedWrapper>
         </h2>
         <p className="text-4 md:text-[24px] w-[69%] min-w-[310px] mt-6 md:mt-2">
-          Olá, sou o João! Desenvolvedor FrontEnd com mais de 2 anos
+          Olá, meu nome é João Pedro Sena! Desenvolvedor FrontEnd com mais de 2 anos
           de experiência, especializado em
           {' '}
           <UnderlinedWrapper>JavaScript</UnderlinedWrapper>

@@ -9,7 +9,7 @@ import { Toaster } from '@/components/ui/toaster';
 const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'jp-sena.dev',
+  title: 'jp-sena.dev - João Pedro sena de Moura',
   icons: '/icon.ico',
 };
 
