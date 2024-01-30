@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+User-agent: *
+Allow: /
+
+sitemap: https://www.jp-sena.dev/sitemap.xml
