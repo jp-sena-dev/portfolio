@@ -21,7 +21,7 @@ export const projects: Projects[] = [
   },
   {
     title: 'MarketPlace',
-    description: '👋 Boas vindas ao projeto! O desenvolvimento dessa aplicação teve como objetivo criar uma iterface a partir dos dados disponibilizados pela API do Mercado Livre.',
+    description: '👋 Boas vindas ao projeto! O desenvolvimento dessa aplicação teve como objetivo criar uma interface a partir dos dados disponibilizados pela API do Mercado Livre.',
     imageURL: '/projects/marketplace.png',
     links: {
       repository: 'https://github.com/jp-sena-dev/marketplace',
