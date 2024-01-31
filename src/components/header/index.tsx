@@ -23,7 +23,7 @@ export function Header({ selectedSection, setSectionSelected }: HeaderProps) {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/joaopedr0sena"
+            href="https://github.com/jp-sena-dev"
             className="hover:text-action h-8 lg:h-[50px]"
           >
             <Github size="100%" />

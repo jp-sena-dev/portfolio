@@ -12,7 +12,7 @@ export function SocialMeadiaLinks() {
       <a
         target="_blank"
         rel="noreferrer"
-        href="https://github.com/joaopedr0sena"
+        href="https://github.com/jp-sena-dev"
         className="hover:text-action"
       >
         <Github size="35px" />
