@@ -20,6 +20,16 @@ export const projects: Projects[] = [
     technologies: ['JavaScript', 'TypeScript', 'Next.js', 'TailwindCSS', 'HTML'],
   },
   {
+    title: 'Chat.io',
+    description: '👋 Boas vindas ao Chat.io! Nosso objetivo é proporcionar uma experiência de comunicação em tempo real através de chats. Utilizando WebSockets para conexões instantâneas entre os usuários, permitindo conversas fluidas e interativas.',
+    imageURL: '/projects/chat-io.png',
+    links: {
+      repository: 'https://github.com/jp-sena-dev/chat.io',
+      web: 'http://chat-io-phi.vercel.app',
+    },
+    technologies: ['HTML', 'JavaScript', 'React', 'Mui', 'Express', 'Socket.io', 'Firebase'],
+  },
+  {
     title: 'MarketPlace',
     description: '👋 Boas vindas ao projeto! O desenvolvimento dessa aplicação teve como objetivo criar uma interface a partir dos dados disponibilizados pela API do Mercado Livre.',
     imageURL: '/projects/marketplace.png',
