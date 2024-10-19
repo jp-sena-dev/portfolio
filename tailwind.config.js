@@ -21,11 +21,16 @@ module.exports = {
         action: {
           DEFAULT: '#107E78',
           hover: '#22B0A9',
-      },
+          '100': '#107e78bf',
+        },
+        text: {
+          DEFAULT: '#222222',
+          '100': '#2222228a',
+        },
+        background: '#EFF1F1',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
