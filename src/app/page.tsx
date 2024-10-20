@@ -1,33 +1,39 @@
 'use client';
 
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Observer } from '@/components/observer';
-import { Header } from '@/components/header';
-import { HeroSection } from '@/components/hero-section';
-import { PortfolioSection } from '@/components/portfolio-section';
-import { AboutSection } from '@/components/about-section';
+import { Header } from '@/app/components/header';
+import { HeroSection } from '@/app/components/hero-section';
+import { PortfolioSection } from '@/app/components/portfolio-section';
+import { AboutSection } from '@/app/components/about-section';
 import { Footer } from '@/components/footer';
 
 export default function Home() {
   const [selectedSection, setSectionSelected] = useState('home');
 
   return (
-    <div>
-      <div className="px-4 pt-8 md:px-16 pt-16 overflow-x-hidden" id="home">
-        <section className="h-screen ">
+    <div className="">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <Header selectedSection={selectedSection} />
+        <section id="home">
           <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="home" />
-          <Header selectedSection={selectedSection} setSectionSelected={setSectionSelected} />
           <HeroSection />
         </section>
-        <section id="portfolio" className="pt-16 mb-24">
-          <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="portfolio" />
-          <PortfolioSection />
-        </section>
-        <section id="about" className="pt-16">
-          <AboutSection />
-          <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="about" />
-        </section>
-      </div>
+      </motion.div>
+      <section id="about">
+        <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="about" />
+        <AboutSection />
+      </section>
+      <section id="portfolio">
+        <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="portfolio" />
+        <PortfolioSection />
+      </section>
       <Footer />
     </div>
   );
