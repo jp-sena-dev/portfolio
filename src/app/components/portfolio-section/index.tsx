@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import Link from 'next/link';
+import { ScrollTrigger } from 'gsap/all';
 import { LuServer, LuTags } from 'react-icons/lu';
 import { LiaLaptopCodeSolid } from 'react-icons/lia';
 import { GoBook } from 'react-icons/go';
@@ -10,6 +11,8 @@ import { TitleSection } from '../../../components/title-section';
 
 export function PortfolioSection() {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     gsap.utils.toArray('.freelanceObjectAnimate').forEach((element: any, i) => {
       gsap.fromTo(element, {
         top: '-75px',
@@ -48,7 +51,7 @@ export function PortfolioSection() {
         ease: 'power2.inOut',
         delay: i * 1.5,
       });
-    });
+    }, []);
 
     gsap.utils.toArray('.backendObjectAnimate').forEach((element: any, i) => {
       gsap.fromTo(element, {
@@ -62,7 +65,7 @@ export function PortfolioSection() {
         delay: i * 0.5,
       });
     });
-  });
+  }, []);
 
   return (
     <div className="">

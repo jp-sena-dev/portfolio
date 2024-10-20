@@ -7,12 +7,12 @@ import { Observer } from 'gsap/all';
 import Link from 'next/link';
 
 export function SocialMediaButton() {
-  const tl = gsap.timeline({
-    repeat: -1,
-    repeatDelay: 0,
-  });
-
   useEffect(() => {
+    const tl = gsap.timeline({
+      repeat: -1,
+      repeatDelay: 0,
+    });
+
     gsap.registerPlugin(Observer);
 
     gsap.utils.toArray('.socialMedia').forEach((element: any) => {
@@ -78,7 +78,7 @@ export function SocialMediaButton() {
         });
       },
     });
-  });
+  }, []);
 
   return (
     <div id="socialMediaContainer" className="bg-white hidden md:block rounded-full w-16 h-16 relative overflow-hidden">
