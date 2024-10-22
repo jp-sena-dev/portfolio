@@ -22,17 +22,20 @@ export default function Home() {
       >
         <Header selectedSection={selectedSection} />
         <section id="home">
-          <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="home" />
-          <HeroSection />
+          <Observer setSection={setSectionSelected} sectionId="home">
+            <HeroSection />
+          </Observer>
         </section>
       </motion.div>
       <section id="about">
-        <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="about" />
-        <AboutSection />
+        <Observer setSection={setSectionSelected} sectionId="about">
+          <AboutSection />
+        </Observer>
       </section>
       <section id="portfolio">
-        <Observer selectedSection={selectedSection} setSection={setSectionSelected} sectionId="portfolio" />
-        <PortfolioSection />
+        <Observer setSection={setSectionSelected} sectionId="portfolio">
+          <PortfolioSection />
+        </Observer>
       </section>
       <Footer />
     </div>
