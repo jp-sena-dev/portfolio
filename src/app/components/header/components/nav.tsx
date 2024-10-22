@@ -68,13 +68,13 @@ export function Nav({ selectedSection }: NavProps) {
 
   return (
     <nav ref={navRef} className="fixed top-[32px] left-1/2 translate-x-[-50%] z-50 flex gap-2 md:gap-20 p-2 md:p-3 rounded-full">
-      <Link href="/#" className="md:text-2xl px-2 md:px-4 transition hover:text-action hover:-translate-y-0.5 trasition">
+      <Link href="/#" className="md:text-2xl px-2 md:px-4 transition active:text-action active:-translate-y-0.5 trasition">
         HOME
       </Link>
-      <Link href="/#about" className={`md:text-2xl px-2 md:px-4 transition hover:text-action hover:-translate-y-0.5 trasition ${selectedSection === 'about' ? 'text-action -translate-y-0.5' : 'text-text'}`}>
+      <Link href="/#about" className={`md:text-2xl px-2 md:px-4 transition active:text-action active:-translate-y-0.5 trasition ${selectedSection === 'about' ? 'text-action -translate-y-0.5' : 'text-text'}`}>
         SOBRE
       </Link>
-      <Link href="/#portfolio" className={`md:text-2xl px-2 md:px-4 transition hover:text-action hover:-translate-y-0.5 trasition ${selectedSection === 'portfolio' ? 'text-action -translate-y-0.5' : 'text-text'}`}>
+      <Link href="/#portfolio" className={`md:text-2xl px-2 md:px-4 transition active:text-action active:-translate-y-0.5 trasition ${selectedSection === 'portfolio' ? 'text-action -translate-y-0.5' : 'text-text'}`}>
         PROJETOS
       </Link>
     </nav>
