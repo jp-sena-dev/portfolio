@@ -41,7 +41,7 @@ export function HeroSection() {
     <div ref={containerRef} className="relative h-[100vh] max-h-[580px] md:max-h-lvh flex flex-col justify-between gap-8 md:gap-0 overflow-hidden">
       <p className="text-action font-bold text-4xl md:text-[86px] lg:text-[96px] mx-auto mt-[6%] flex items-center">
         HELLO W
-        <span ref={worldRef} className="translate-y-[5%] mx-[-4px] md:mx-[-8px]">
+        <span ref={worldRef} className="mb-[-4px] md:mb-[-12px] mx-[-4px] md:mx-[-8px]">
           <PiGlobeHemisphereWest />
         </span>
         RLD!
