@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="bg-white mt-28 py-12 md:px-10 xl:px-20 px-4 flex items-center flex-col-reverse gap-8 md:gap-0 md:flex-row justify-between">
       <p className="text-text text-sm text-text-100 cursor-default">
         <span className="text-action">developed by</span>
-        : @João Pedro sena de Moura
+        : @João Pedro Sena de Moura
       </p>
       <div className="flex gap-4 sm:gap-8 text-text-100">
         <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/jp-sena-dev/" className="hover:text-black transition">LinkedIn</a>

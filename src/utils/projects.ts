@@ -43,17 +43,17 @@ export const frontend: Project[] = [
 
 export const freelance: Project[] = [
   {
+    title: 'Sofia Sarmento',
+    description: 'Desenvolvimento de um site para uma estudante de marketing, baseado em um layout criado por ela mesma. O objetivo do projeto foi transformar seu design em uma plataforma digital personalizada e funcional, oferecendo uma experiência de navegação otimizada e intuitiva. A solução destaca com elegância sua identidade visual e profissionalismo, resultando em uma presença digital autêntica e acessível.',
+    imageURL: '/projects/sofia-sarmento.png',
+    link: 'https://www.sofiasarmentorosa.com/',
+    technologies: ['JavaScript', 'TypeScript', 'Next.js', 'TailwindCSS', 'HTML'],
+  },
+  {
     title: 'INY',
     description: 'Landing page desenvolvida para uma empresa de massoterapia, focada em combinar estética e funcionalidade para atrair novos clientes. O projeto foi realizado com o objetivo de criar uma interface envolvente e informativa, destacando os serviços e benefícios da massoterapia de forma clara.',
     imageURL: '/projects/iny.png',
     link: 'https://iny.vercel.app/',
-    technologies: ['JavaScript', 'TypeScript', 'Next.js', 'TailwindCSS', 'HTML'],
-  },
-  {
-    title: 'Sofia Sarmento',
-    description: 'Desenvolvimento de um site para a designer Sofia Sarmento, com base em um layout previamente elaborado por ela. O projeto visou transformar seu design em uma plataforma digital personalizada e altamente funcional, assegurando uma navegação intuitiva e otimizada, realçando de forma elegante sua identidade visual e profissionalismo.',
-    imageURL: '/projects/sofia-sarmento.png',
-    link: '/',
     technologies: ['JavaScript', 'TypeScript', 'Next.js', 'TailwindCSS', 'HTML'],
   },
 ];
