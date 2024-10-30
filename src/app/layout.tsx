@@ -3,8 +3,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import { Inter as FontSans } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
-import { cn } from '@/lib/utils';
-import { Toaster } from '@/components/ui/toaster';
+import 'keen-slider/keen-slider.min.css';
 
 const fontSans = FontSans({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -21,20 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(
-        'min-h-screen bg-background font-sans antialiased',
-        fontSans.variable,
-      )}
-      >
+      <body className={`scroll-smooth min-h-screen bg-background font-sans antialiased ${fontSans}`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
           {children}
-          <GoogleAnalytics gaId="G-GXFP79SKSL" />
-          <Toaster />
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS as string} />
         </ThemeProvider>
       </body>
     </html>
