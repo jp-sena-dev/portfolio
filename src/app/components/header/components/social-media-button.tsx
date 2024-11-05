@@ -93,7 +93,7 @@ export function SocialMediaButton() {
       <Link
         target="_blank"
         rel="noreferrer"
-        href="https://www.linkedin.com/in/jp-sena-dev/"
+        href="https://www.instagram.com/joao_sena1410/"
         className="socialMedia absolute hover:text-action -top-full z-[3]"
       >
         <Instagram size={38} />
@@ -101,7 +101,7 @@ export function SocialMediaButton() {
       <Link
         target="_blank"
         rel="noreferrer"
-        href="https://www.linkedin.com/in/jp-sena-dev/"
+        href="https://github.com/jp-sena-dev"
         className="socialMedia absolute hover:text-action -top-full z-[3]"
       >
         <Github size={38} />
@@ -110,7 +110,7 @@ export function SocialMediaButton() {
         <Link
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/jp-sena-dev/"
+          href="https://github.com/jp-sena-dev"
           className="socialMeida hover:text-action w-full h-full grid place-items-center hover:-translate-y-0.5 trasition"
         >
           <Github size={38} />
@@ -120,7 +120,7 @@ export function SocialMediaButton() {
         <Link
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/jp-sena-dev/"
+          href="https://www.instagram.com/joao_sena1410/"
           className="socialMeida hover:text-action w-full h-full grid place-items-center hover:-translate-y-0.5 trasition"
         >
           <Instagram size={38} />

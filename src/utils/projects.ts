@@ -61,15 +61,15 @@ export const freelance: Project[] = [
 export const backend: Project[] = [
   {
     title: 'consumption-api',
-    description: '👋 Boas vindas ao Chat.io! Nosso objetivo é proporcionar uma experiência de comunicação em tempo real através de chats. Utilizando WebSockets para conexões instantâneas entre os usuários, permitindo conversas fluidas e interativas.',
-    imageURL: '/projects/chat-io.png',
+    description: '',
+    imageURL: '',
     link: 'https://github.com/jp-sena-dev/shopper-consumption-api',
     technologies: ['HTML', 'JavaScript', 'React', 'Mui', 'Express', 'Socket.io', 'Firebase'],
   },
   {
     title: 'cash-tracker',
-    description: '👋 Boas vindas ao Chat.io! Nosso objetivo é proporcionar uma experiência de comunicação em tempo real através de chats. Utilizando WebSockets para conexões instantâneas entre os usuários, permitindo conversas fluidas e interativas.',
-    imageURL: '/projects/chat-io.png',
+    description: '',
+    imageURL: '',
     link: 'https://github.com/jp-sena-dev/cash-tracker/tree/master',
     technologies: ['HTML', 'JavaScript', 'React', 'Mui', 'Express', 'Socket.io', 'Firebase'],
   },
