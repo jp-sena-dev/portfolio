@@ -25,8 +25,8 @@ export function HeroSection() {
       },
     });
 
-    tl.fromTo(fristTextRef.current, { top: '0' }, { top: '-15%' })
-      .fromTo(secondTextRef.current, { top: '50%' }, { top: '0%' }, '<');
+    tl.fromTo(fristTextRef.current, { top: '0' }, { top: '-30%' })
+      .fromTo(secondTextRef.current, { top: '50%' }, { top: '-60%' }, '<');
 
     gsap.to(worldRef.current, {
       rotate: 360,
@@ -46,12 +46,12 @@ export function HeroSection() {
         </span>
         RLD!
       </p>
-      <p ref={descriptionRef} className="text-[14px] -right-2 bottom-[50%] max-w-[40%] hidden sm:block sm:text-2xl sm:block text-pretty text-text-100 w-80 absolute sm:bottom-[20%] sm:left-[10%] z-[2]">
+      <p ref={descriptionRef} className="text-[14px] left-8 bottom-12 sm:left-none sm:-right-2  max-w-[40%] sm:text-2xl sm:block text-pretty text-text-100 w-80 absolute sm:bottom-[20%] sm:left-[10%] z-[2]">
         Apaixonado por transformar ideias em soluções tecnológicas impactantes.
       </p>
-      <div className="relative">
+      <div className="relative w-full h-[60%]">
         <p ref={fristTextRef} className="text-action z-[-1] text-4xl md:text-[80px] md:text-[90px] xl:text-[128px] font-bold absolute left-[2%]">DESENVOLVEDOR</p>
-        <img className="mx-auto w-[70%] sm:w-[50%] md:w-fit" src="/my.png" alt="" />
+        {/* <img className="mx-auto w-[70%] sm:w-[50%] md:w-fit" alt="" /> */}
         <p ref={secondTextRef} className="text-action text-5xl md:text-[80px] lg:text-[128px] font-bold absolute top-[50%] right-[2%]">FULLSTACK</p>
       </div>
     </div>
