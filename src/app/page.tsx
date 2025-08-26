@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Article } from '@genfid/react-article';
 import { Observer } from '@/components/observer';
 import { Header } from '@/app/components/header';
 import { HeroSection } from '@/app/components/hero-section';
